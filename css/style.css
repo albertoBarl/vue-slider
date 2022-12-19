@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+d-flex {
+  display: flex;
+}
+
 .container {
   height: 100vh;
   display: flex;
