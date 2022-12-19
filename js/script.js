@@ -34,11 +34,11 @@ createApp({
     };
   },
   methods: {
-    switchImage(index) {
-      this.activeImage = index;
-    },
     next() {
       this.activeImage++;
+      if (this.activeImage === this.slides.lenght - 1) {
+        this.activeImage = 0;
+      }
     },
     prev() {
       this.activeImage--;
